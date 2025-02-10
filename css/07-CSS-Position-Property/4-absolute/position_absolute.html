@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Position Absolute</title>
+    <link rel="stylesheet" href="position_absolute.css" />
+  </head>
+  <body>
+    <h1>
+      How pixel ( px )and percentage ( % ) unit works, When an element is
+      positioned absolutely.
+    </h1>
+    <p>
+      When an element is positioned absolutely, its position is determined
+      relative to its closest positioned ancestor (or the initial containing
+      block ( body ) if no positioned ancestor is found ).
+    </p>
+
+    <!-- Example 1 -->
+    <h3>Pixel unit ( px )</h3>
+    <p>
+      When you use pixel (px) units for positioning an absolutely positioned
+      element, the element will be positioned a fixed number of pixels from the
+      top, bottom, left, or right of its containing block. For example, top:
+      20px; will position the element 20 pixels from the top of its containing
+      block.
+    </p>
+    <div class="box1" id="div-1">1</div>
+    <div id="container1">
+      <div class="box1" id="div-2">2</div>
+    </div>
+    <div class="box1" id="div-3">3</div>
+    <hr />
+
+    <!-- Example 2 -->
+    <h3>Percentage unit ( % )</h3>
+    <p>
+      When you use percentage (%) units for positioning an absolutely positioned
+      element, the element will be positioned a percentage of the height or
+      width of its containing block. For example, top: 50%; will position the
+      element vertically at 50% of the height of its containing block.
+    </p>
+    <div class="box2" id="div-4">4</div>
+    <div id="container2">
+      <div class="box2" id="div-5">5</div>
+    </div>
+    <div class="box2" id="div-6">6</div>
+
+    <hr />
+
+    <!-- Example 3 -->
+    <h1>
+      What if no top, bottom, right, or left properties are assigned to an
+      absolutely positioned element.
+    </h1>
+    <div class="box2" id="div-7">7</div>
+    <p>
+      If no top, bottom, right, or left properties are assigned to an absolutely
+      positioned element, the element will be positioned at the default location
+      based on the normal document flow. This means that the element will be
+      positioned where it would normally appear in the document, but it will be
+      taken out of the normal document flow and positioned absolutely relative
+      to its closest positioned ancestor.
+    </p>
+    <hr />
+    <!-- Example 4 -->
+    <h1>How z-index works with absolutely positioned element.</h1>
+    <div id="grandFather">
+      <h4>Grand Father</h4>
+      <div id="father-1" class="father">
+        <h4>Father 1</h4>
+        <div class="child" id="child-1">Child 1</div>
+      </div>
+      <div id="father-2" class="father">
+        <h4>Father 2</h4>
+        <div class="child" id="child-2">Child 2</div>
+      </div>
+    </div>
+  </body>
+</html>

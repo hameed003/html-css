@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Position Fixed</title>
+    <link rel="stylesheet" href="../../css/level 5/position_fixed.css" />
+  </head>
+  <body>
+    <div id="div-1" class="box">Box 1</div>
+    <div id="div-2" class="box">Box 2</div>
+    <div id="div-3" class="box">Box 3</div>
+    <!-- <div id="div4" class="box">4 Absolute</div>
+      <div id="div5" class="box">5 Sticky</div> -->
+    <h1>Position Fixed</h1>
+    <h3>Notes:</h3>
+    <!-- Notes -->
+    <p class="to-read">
+      Elements with position: fixed do not adhere to the normal render flow of
+      the document. Instead, fixed elements are positioned relative to the
+      viewport — in other words, the part of the document that is currently
+      visible in the browser.
+    </p>
+    <p class="to-read">
+      Fixed elements do not move when the user scrolls, and, unlike relative,
+      they do not leave a blank space where the element would have been
+      positioned. You can use the top, right, bottom, and left properties to set
+      the fixed element's final position.
+    </p>
+    <p class="to-read">
+      Here, div 2 is offset by 30 pixels top and 30 pixels left, like in the
+      last example with relative position. However, this time it is positioned
+      relative to the viewport. Notice that there is no space where the element
+      would have been on the page.
+    </p>
+    <p class="to-read">
+      Additionally, note that using the fixed value automatically establishes a
+      new stacking context.
+    </p>
+    <h5>Reference:</h5>
+    <span
+      ><a
+        href="https://blog.hubspot.com/website/css-position#:~:text=The%20CSS%20position%20property%20is,final%20location%20of%20the%20element"
+        >https://blog.hubspot.com/website/css-position#:~:text=The%20CSS%20position%20property%20is,final%20location%20of%20the%20element</a
+      ></span
+    >
+    <h2>
+      What if no top, bottom, right, or left properties are assigned to a
+      position fixed element.
+    </h2>
+    <div id="div-4">Box 4</div>
+    <p class="to-read">
+      For a fixed positioned element, if no top, bottom, right, or left
+      properties are assigned, the element will be positioned at the default
+      location based on the viewport. It will be fixed in place relative to the
+      viewport and will not move when the page is scrolled.
+    </p>
+    <hr />
+
+    <!-- Dummy Content -->
+    <h3>Dummy texts</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+      suscipit unde. Doloribus non alias at quas, possimus praesentium
+      cupiditate provident magnam aspernatur, expedita est voluptate modi
+      molestiae, tempora ducimus veritatis! Lorem, ipsum dolor sit amet
+      consectetur adipisicing elit. Tempore vero et optio. Iste inventore
+      voluptatem laudantium dolorum assumenda molestias necessitatibus earum
+      saepe, quasi natus, explicabo non, praesentium rem provident pariatur!
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+      suscipit unde. Doloribus non alias at quas, possimus praesentium
+      cupiditate provident magnam aspernatur, expedita est voluptate modi
+      molestiae, tempora ducimus veritatis! Lorem, ipsum dolor sit amet
+      consectetur adipisicing elit. Tempore vero et optio. Iste inventore
+      voluptatem laudantium dolorum assumenda molestias necessitatibus earum
+      saepe, quasi natus, explicabo non, praesentium rem provident pariatur!
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+      suscipit unde. Doloribus non alias at quas, possimus praesentium
+      cupiditate provident magnam aspernatur, expedita est voluptate modi
+      molestiae, tempora ducimus veritatis! Lorem, ipsum dolor sit amet
+      consectetur adipisicing elit. Tempore vero et optio. Iste inventore
+      voluptatem laudantium dolorum assumenda molestias necessitatibus earum
+      saepe, quasi natus, explicabo non, praesentium rem provident pariatur!
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+      suscipit unde. Doloribus non alias at quas, possimus praesentium
+      cupiditate provident magnam aspernatur, expedita est voluptate modi
+      molestiae, tempora ducimus veritatis! Lorem, ipsum dolor sit amet
+      consectetur adipisicing elit. Tempore vero et optio. Iste inventore
+      voluptatem laudantium dolorum assumenda molestias necessitatibus earum
+      saepe, quasi natus, explicabo non, praesentium rem provident pariatur!
+    </p>
+  </body>
+</html>

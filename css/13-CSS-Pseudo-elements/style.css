@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 20px;
+}
+
+ul {
+  margin: 10px 0 20px 40px;
+}
+
+ol {
+  margin: 10px 0 10px 40px;
+}
+
+p {
+  margin: 10px 0 20px 0;
+  font-size: 18px;
+}
+
+h1 {
+  color: rgb(13, 241, 127);
+}
+
+h4 {
+  margin-top: 50px;
+  color: rgb(245, 30, 234);
+}
+
+h5 {
+  font-size: 30px;
+  color: rgb(250, 11, 11);
+  font-weight: 600;
+}
+h6 {
+  margin-top: 10px;
+  margin-bottom: -5px;
+  font-weight: 600;
+  color: rgb(240, 18, 18);
+}
+
+/* CSS Pseudo Element ::first-letter */
+.first-letter-container p::first-letter {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(19, 240, 74);
+}
+
+/* CSS Pseudo Element ::first-line */
+.first-line-container p::first-line {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(19, 240, 74);
+}
+/* CSS Pseudo Element ::before and ::after with content */
+.container-1 p::before {
+  content: "before-content";
+  color: rgb(14, 171, 233);
+  font-weight: 600;
+}
+
+.container-1 p::after {
+  content: "after-content";
+  color: rgb(14, 171, 233);
+  font-weight: 600;
+}
+
+/*CSS Pseudo Element ::before and ::after without content */
+.container-2 .before,
+.after {
+  border: 1px solid rgb(18, 139, 73);
+  border-radius: 8px;
+  padding: 5px;
+}
+.container-2 .before::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(9, 224, 153);
+}
+.container-2 .after::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(9, 224, 153);
+}
+
+a {
+  width: 100px;
+  display: inline-block;
+  margin: 10px 0 20px 0;
+  padding: 10px;
+  border: 1px solid rgb(18, 139, 73);
+  text-decoration: none;
+  border-radius: 10px;
+}
+.container-2 a::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(9, 224, 153);
+}
+
+/*CSS Pseudo Element ::marker */
+.marker-container ul ::marker {
+  color: red;
+  font-size: 23px;
+}
+
+.marker-container ol ::marker {
+  color: red;
+  font-size: 23px;
+}
+
+/*CSS Pseudo Element ::selection */
+.selection-container ::selection {
+  color: red;
+  background: yellow;
+}

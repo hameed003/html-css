@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+h1 {
+  color: #08e84f;
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+h3 {
+  color: #f316c7;
+  margin-top: 20px;
+}
+p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+hr {
+  margin: 80px 0;
+}
+/*# CSS for Exampl 1 */
+.box1 {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 75px;
+  color: white;
+  font-size: 24px;
+}
+
+#div-1 {
+  background-color: #ff5c35;
+}
+
+#container1 {
+  background-color: #b6c7d6;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  position: relative;
+}
+/* here we are using pixel (px) unit to move the absolutely positioned element. */
+#div-2 {
+  margin: 0;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  background-color: #0068b1;
+}
+
+#div-3 {
+  background-color: #4fb06d;
+  margin-bottom: 20px;
+}
+
+/*# CSS for Example 2 */
+.box2 {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 75px;
+  color: white;
+  font-size: 24px;
+}
+
+#div-4 {
+  background-color: #ff5c35;
+}
+
+#container2 {
+  background-color: #b6c7d6;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* here we are using pecentage (%) unit to move the absolutely positioned element. */
+#div-5 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #0068b1;
+}
+
+#div-6 {
+  background-color: #4fb06d;
+}
+
+/* CSS for example 3 */
+#div-7 {
+  position: absolute;
+  background-color: #e60bed;
+  /* z-index: -1; */
+}
+
+/* CSS for example 4 */
+h4 {
+  background-color: #fdfd09;
+  display: inline;
+  margin-bottom: 30px;
+  padding: 5px;
+  border-radius: 5px;
+}
+#grandFather {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #0af84df5;
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+}
+.father {
+  padding: 20px;
+  margin: 10px 0 0 0;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  /* position: absolute; */
+}
+#father-1 {
+  background-color: #e90cdaa3;
+  position: absolute;
+  border: 3px solid white;
+  /* z-index: -5; */
+}
+#father-2 {
+  padding-top: 150px;
+  background-color: #0c82e9a1;
+  position: absolute;
+  border: 3px solid #111110;
+  margin-top: 40px;
+  /* z-index: -1; */
+}
+.father .child {
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+}
+
+#father-1 #child-1 {
+  background-color: #35ff5a;
+  position: absolute;
+  z-index: 10;
+}
+
+#father-2 #child-2 {
+  background-color: #35ff5a;
+}
+
+/* /////////////////////////////// */
+/** Position: absolute */
+/* 👉 An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+👉 (a positioned ancestor is any element with a position value besides static, the default).
+
+👉 However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+👉 Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+
+👉 Here, div 2 is placed inside a container div (in gray) and positioned relative to the 'container', since the container is the nearest ancestor element of div 2.
+
+/** Reference */
+/* https://blog.hubspot.com/website/css-position#:~:text=The%20CSS%20position%20property%20is,final%20location%20of%20the%20element. */

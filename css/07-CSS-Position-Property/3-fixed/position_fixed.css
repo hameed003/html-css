@@ -1,0 +1,81 @@
+body {
+  font-family: sans-serif;
+  height: 100vh;
+}
+h1 {
+  color: #0fa53f;
+  margin-bottom: -15px;
+}
+h2 {
+  color: #f509ae;
+  margin-bottom: -10px;
+  font-size: 23px;
+}
+h3 {
+  color: #f509ae;
+  margin-bottom: -15px;
+}
+h5 {
+  color: tomato;
+  font-size: 20px;
+  display: inline;
+}
+hr {
+  margin-top: 20px;
+}
+.to-read {
+  background-color: #fff;
+  padding: 0;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 10px;
+}
+p {
+  background-color: #0ee954;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+div {
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 75px;
+  color: white;
+  font-size: 24px;
+}
+
+#div-1 {
+  background-color: #ff5c35;
+}
+
+#div-2 {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  background-color: #0068b1;
+  /* z-index: -1; */
+}
+
+#div-3 {
+  background-color: #4fb06d;
+}
+#div-4 {
+  position: fixed;
+  background-color: #f809e4;
+  /* z-index: -1; */
+}
+/** Position: fixed */
+/* Elements with position: fixed do not adhere to the normal render flow of the document. Instead, fixed elements are positioned relative to the viewport — in other words, the part of the document that is currently visible in the browser.
+
+Fixed elements do not move when the user scrolls, and, unlike relative, they do not leave a blank space where the element would have been positioned. You can use the top, right, bottom, and left properties to set the fixed element's final position.
+
+Here, div 2 is offset by 30 pixels top and 30 pixels left, like in the last example with relative position. However, this time it is positioned relative to the viewport. Notice that there is no space where the element would have been on the page.
+
+Additionally, note that using the fixed value automatically establishes a new stacking context. */
+
+/** Reference */
+/* https://blog.hubspot.com/website/css-position#:~:text=The%20CSS%20position%20property%20is,final%20location%20of%20the%20element. */

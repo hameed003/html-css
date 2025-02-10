@@ -1,0 +1,32 @@
+#div-1 {
+  background-color: #ff5c35;
+}
+
+#div-2 {
+  position: static;
+  background-color: #0068b1;
+}
+
+#div-3 {
+  background-color: #4fb06d;
+}
+
+div {
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 75px;
+  color: white;
+  font-size: 24px;
+}
+/** Position: Static */
+/* Static is the default position for HTML elements. Elements with position: static are positioned based on the normal flow of the page, as you would expect them to be without any CSS styling. They are not affected by the top, right, bottom, or left properties. Z-index also does not apply to static elements.
+
+In the example below, only div 2 is assigned position: static. However, you’ll see that its placement in the document is the same as if it did not have this property. You can delete the position: static from the CSS and the display will not change.
+
+Nothing too exciting here. Next, let’s see how we can change an element’s position from the default. */
+
+/** Reference */
+/* https://blog.hubspot.com/website/css-position#:~:text=The%20CSS%20position%20property%20is,final%20location%20of%20the%20element. */

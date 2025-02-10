@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+  background-color: rgb(79, 76, 76);
+  height: 100vh;
+  font-family: sans-serif;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+}
+
+/** /////////////////////////////////////////// */
+/** Grid Container */
+.container {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #eee7e7;
+  width: 90%;
+  margin: 50px auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 120px 60px 100px 400px 50px;
+
+  grid-gap: 15px;
+
+  /** Another way of positioning an element in CSS Grid */
+  /*? works with named grid area */
+  grid-template-areas:
+    "header header header"
+    "menu menu menu"
+    "box1 box2 sidebar"
+    "content content sidebar"
+    "footer footer footer";
+
+  /*? if we want left the 'side columns epmty' then we have to use dot ( . ) however we can not left a middle column empty. */
+
+  /* grid-template-areas:
+    "header header ."
+    ". menu menu"
+    "box1 box2 sidebar"
+    "content content sidebar"
+    "footer footer footer"; */
+}
+
+/** /////////////////////////////////////////// */
+/** Grid Items */
+
+.header {
+  background-color: orangered;
+
+  /** Another way of positioning an element in CSS Grid */
+  /*? naming grid area */
+  grid-area: header;
+}
+
+.menu {
+  background-color: yellowgreen;
+  grid-area: menu;
+}
+
+.box1 {
+  background-color: slateblue;
+  grid-area: box1;
+}
+
+.box2 {
+  background-color: hotpink;
+  grid-area: box2;
+}
+
+.sidebar {
+  background-color: royalblue;
+  grid-area: sidebar;
+}
+
+.content {
+  background-color: rgba(9, 177, 132, 0.759);
+  grid-area: content;
+}
+
+.footer {
+  background-color: goldenrod;
+  grid-area: footer;
+}

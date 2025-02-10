@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+  background-color: rgb(79, 76, 76);
+  height: 100vh;
+  font-family: sans-serif;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+}
+
+/** /////////////////////////////////////////// */
+/** Grid Container */
+.container {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #eee7e7;
+  width: 90%;
+  margin: 50px auto;
+
+  display: grid;
+
+  /** min-content and minmax() function in CSS Grid */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /* grid-template-columns: max-content 1fr 1fr min-content; */
+  /* grid-template-columns: minmax(150px, 300px) 1fr 1fr min-content; */
+  grid-template-columns: minmax(150px, 50%) 1fr 1fr min-content;
+
+  /* grid-template-rows: repeat(2, 150px); */
+  /* grid-template-rows: repeat(2, min-content); */
+  /* grid-template-rows: repeat(2, minmax(150px, 500px)); */
+  grid-template-rows: repeat(2, minmax(150px, min-content));
+
+  grid-gap: 15px;
+}
+
+/** /////////////////////////////////////////// */
+/** Grid Items */
+
+.item1 {
+  background-color: orangered;
+}
+
+.item2 {
+  background-color: yellowgreen;
+}
+
+.item3 {
+  background-color: slateblue;
+}
+
+.item4 {
+  background-color: hotpink;
+}
+
+.item5 {
+  background-color: royalblue;
+}
+
+.item6 {
+  background-color: rgb(244, 11, 232);
+}
+
+.item7 {
+  background-color: goldenrod;
+}
+
+.item8 {
+  background-color: rgba(9, 177, 132, 0.759);
+}

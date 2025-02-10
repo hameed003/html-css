@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+  background-color: rgb(79, 76, 76);
+  height: 100vh;
+  font-family: sans-serif;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+}
+
+/** /////////////////////////////////////////// */
+/** Grid Container */
+.container {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #eee7e7;
+  width: 90%;
+  margin: 50px auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 120px);
+  grid-gap: 15px;
+
+  grid-auto-rows: 70px;
+
+  /** Grid items alignments */
+  /*? align-items are used for aligning all the items of the grid container */
+  /* align-items: start; */
+  /* align-items: center; */
+  /* align-items: end; */
+
+  /*? the default align-items value is strech */
+  /* align-items: stretch;  */
+}
+
+/** /////////////////////////////////////////// */
+/** Grid Items */
+
+.item1 {
+  background-color: orangered;
+}
+
+.item2 {
+  background-color: yellowgreen;
+}
+
+.item3 {
+  background-color: rgb(181, 11, 248);
+  grid-row: span 3;
+}
+
+.item4 {
+  background-color: hotpink;
+}
+
+.item5 {
+  background-color: royalblue;
+}
+
+.item6 {
+  background-color: rgb(244, 11, 232);
+}
+
+.item7 {
+  background-color: goldenrod;
+  grid-column: span 2;
+}
+
+.item8 {
+  background-color: rgba(9, 177, 132, 0.759);
+}

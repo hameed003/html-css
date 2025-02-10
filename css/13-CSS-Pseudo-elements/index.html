@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>CSS Pseudo Elements</h1>
+      <p>
+        A CSS pseudo-element is used to style specified parts of an element.
+      </p>
+
+      <p>For example, it can be used to:</p>
+      <ul>
+        <li>Style the first letter, or line, of an element</li>
+        <li>Insert content before, or after, the content of an element</li>
+      </ul>
+    </div>
+
+    <hr />
+
+    <!-- CSS Pseudo Element ::first-letter -->
+    <div class="first-letter-container">
+      <h4>::first-letter</h4>
+      <p>
+        The ::first-letter pseudo-element is used to add a special style to the
+        first letter of a text.
+      </p>
+    </div>
+    <hr />
+    <!-- CSS Pseudo Element ::first-line -->
+
+    <div class="first-line-container">
+      <h4>::first-line</h4>
+      <p>
+        You can use the ::first-line pseudo-element to add a special effect to
+        the first line of a text. Some more text. And even more, and more, and
+        more, and more, and more, and more, and more, and more, and more, and
+        more, and more, and more.
+      </p>
+    </div>
+    <hr />
+    <!-- CSS Pseudo Element ::before with content -->
+    <div class="container-1">
+      <h4>::before and ::after with content</h4>
+      <p class="before-1">
+        The ::before and ::after pseudo-element can be used to insert some
+        content before the content of an element.
+      </p>
+    </div>
+
+    <!-- CSS Pseudo Element ::before without content -->
+    <div class="container-2">
+      <h4>::before and ::after without content</h4>
+      <h6>::before element</h6>
+      <p class="before">
+        The ::before and ::after pseudo-element can be used to insert some
+        content before the content of an element.
+      </p>
+      <a href="#">Click Me</a>
+      <h6>::after element</h6>
+      <p class="afterf">
+        The ::before and ::after pseudo-element can be used to insert some
+        content before the content of an element.
+      </p>
+      <h5>IMPORTANT NOTE:</h5>
+
+      <p>
+        The ::before and ::after pseudo-element, by default, is an inline
+        element and does not have any content or specific display properties
+        that would make it take up space or be visible on the screen.
+      </p>
+      <p>
+        To make the ::before and ::after pseudo-element visible, you typically
+        need to set its content property to a non-empty value (such as text or
+        an image) or use other properties like
+        <strong>display: block; ,</strong> <strong>background-color ,</strong>
+        <strong>border</strong> or <strong> box-shadow</strong> to give it a
+        visual representation on the page.
+      </p>
+      <p>
+        Use the <strong>background-image </strong> property to add an image to
+        the ::before and ::after element. This will make the element visible
+        with the image as its background.
+      </p>
+    </div>
+    <hr />
+    <!-- CSS Pseudo Element ::marker -->
+    <div class="marker-container">
+      <h4>::marker</h4>
+      <p>The ::marker pseudo-element selects the markers of list items.</p>
+      <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+
+      <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+      </ol>
+    </div>
+
+    <!-- CSS Pseudo Element ::selection-->
+    <div class="selection-container">
+      <h4>::selection</h4>
+      <p>
+        The ::selection pseudo-element matches the portion of an element that is
+        selected by a user.
+      </p>
+      <p>
+        The following CSS properties can be applied to ::selection: color,
+        background, cursor, and outline.
+      </p>
+    </div>
+  </body>
+</html>

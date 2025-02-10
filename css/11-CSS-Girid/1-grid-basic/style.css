@@ -1,0 +1,132 @@
+body {
+  color: #fff;
+  background-color: rgb(79, 76, 76);
+  height: 100vh;
+  font-family: sans-serif;
+  padding: 20px auto;
+}
+h1 {
+  text-align: center;
+}
+
+/** /////////////////////////////////////////// */
+/** Grid Container */
+.container {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #eee7e7;
+  width: 700px;
+  margin: 50px auto;
+
+  display: grid;
+
+  /** Creating Rows and Column in Grid */
+  /* grid-template-columns: 150px 200px 150px; */
+  /* grid-template-columns: 150px auto 150px; */
+  /* grid-template-columns: 50% 25% 25%; */
+  /* grid-template-columns: 2fr 1fr 1fr; */
+  /* grid-template-columns: repeat(2, 200px) auto; */
+  grid-template-columns: 1fr 1fr 1fr;
+
+  /*? the above all are also possible for rows */
+  grid-template-rows: 100px 100px 100px 100px;
+  /* grid-template-rows: 100px 2fr 1fr; */
+
+  /** Row and Column Gap in Grid */
+  grid-row-gap: 15px;
+  grid-column-gap: 30px;
+
+  /*? short hand for above */
+  grid-gap: 15px 30px;
+}
+
+/** /////////////////////////////////////////// */
+/** Grid Items */
+
+.item1 {
+  background-color: orangered;
+
+  /** Positioning item */
+  /* grid-row-start: 2;
+  grid-row-end: 3; */
+  /*? short hand for above */
+  /* grid-row: 2 / 3; */
+
+  /* grid-column-start: 3;
+  grid-column-end: 4; */
+  /*? short hand for above */
+  /* grid-column: 3 / 4; */
+
+  /*? short hand for the above two short hand */
+  /* grid-area: 2 / 3 / 3 / 4; */
+  /* Each value in the shorthand corresponds to the grid-row-start, grid-column-start, grid-row-end, and grid-column-end properties, respectively. */
+
+  /** Spaning item */
+  /* grid-row-start: 1;
+  grid-row-end: 2; */
+  /*? short hand for above */
+  /* grid-row: 1 / 2; */
+
+  /*? we can also write the above short hand as */
+  grid-row: 1 / span 1;
+
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+  /*? short hand for above */
+  /* grid-column: 1 / 3; */
+
+  /*? we can also write the above short hand as */
+  grid-column: 1 / span 2;
+
+  /*? short hand for the above two short hand */
+  /* grid-area: 1 / 1 / 2 / 3; */
+}
+
+.item2 {
+  background-color: yellowgreen;
+
+  /** Spaning item */
+  grid-area: 1 / 3 / 4 / 4;
+}
+
+.item3 {
+  background-color: slateblue;
+  /* grid-area: 3 / 2 / 4 / 3;
+  z-index: 1; */
+}
+
+.item4 {
+  background-color: hotpink;
+}
+
+.item5 {
+  background-color: royalblue;
+  grid-area: 3 / 1 / 4 / 3;
+}
+
+.item6 {
+  background-color: goldenrod;
+
+  /** positioning item */
+  /* grid-row-start: 1;
+  grid-row-end: 2; */
+  /*? short hand for above */
+  /* grid-row: 1 / 2; */
+
+  /* grid-column-start: 1;
+  grid-column-end: 2; */
+  /*? short hand for above */
+  /* grid-column: 1 / 2; */
+
+  /*? short hand for the above two short hand */
+  /* grid-area: 1 / 1 / 2 / 2; */
+  /* Each value in the shorthand corresponds to the grid-row-start, grid-column-start, grid-row-end, and grid-column-end properties, respectively. */
+
+  /** Spaning item */
+  /* grid-area: 4 / 1 / 5 / 4; */
+
+  /*? we can also write the above short hand with -1 means( end ) */
+  grid-area: 4 / 1 / -1 / -1;
+}

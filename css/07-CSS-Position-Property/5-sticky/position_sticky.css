@@ -1,0 +1,45 @@
+#div-1 {
+  background-color: #ff5c35;
+}
+
+#div-2 {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 10px;
+  background-color: #0068b1;
+}
+
+#div-3 {
+  background-color: #4fb06d;
+}
+
+div {
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 75px;
+  color: white;
+  font-size: 24px;
+}
+
+.generic {
+  background-color: lightgray;
+}
+
+body {
+  height: 1500px;
+}
+
+/** Position: sticky */
+/* Elements with position: sticky are positioned depending on the user’s scroll. Depending on how far the user has scrolled down the page, a sticky element behaves like a relative element until the viewport meets a specified position. Then it becomes fixed in a spot and appears to “stick” to the page as the user scrolls.
+
+In this example, scroll down and watch as 'div 2' goes from behaving like a relative element to a fixed element when it reaches the position top: 0 and “sticks” to the top of the viewport.
+
+Sticky elements always create a stacking context.
+
+Keep in mind that using the Bootstrap CSS framework will provide you with these five values, as well as three additional classes for controlling the position of an element: fixed top, fixed bottom, and sticky top. If you're interested, you can check out the code and examples for each of these Bootstrap CSS position property classes. */
+
+/** Reference */
+/* https://blog.hubspot.com/website/css-position#:~:text=The%20CSS%20position%20property%20is,final%20location%20of%20the%20element. */

@@ -1,0 +1,33 @@
+#div-1 { background-color: #FF5C35; }
+
+#div-2 {
+  position: relative;
+  top: 30px;
+  left: 30px;
+  background-color: #0068B1;
+
+}
+
+#div-3 { background-color: #4FB06D; }
+
+div {
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 75px;
+  color: white;
+  font-size: 24px;
+
+/** Position: relative */
+/* When assigned position: relative, an element follows the render flow of the page, but will be shifted relative to its initial position.
+
+To determine the amount of offset, you set values for the top, right, bottom, and/or left properties. Surrounding elements won’t be affected, but there will be space where the repositioned element would have been (in static positioning).
+
+In this example, I’ve offset 'div 2' by 30 pixels down (with the top property) and 30 pixels to the right (using the left property). The repositioned div does not affect the position of surrounding elements.
+
+When using position: relative, the z-index value should be set to auto unless you want to create a new stacking context. Essentially, a new stacking context means you create a new set of layers that will be stacked based on that element */
+
+/** Reference */
+/* https://blog.hubspot.com/website/css-position#:~:text=The%20CSS%20position%20property%20is,final%20location%20of%20the%20element. */

@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+  background-color: rgb(79, 76, 76);
+  height: 100vh;
+  font-family: sans-serif;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+}
+
+/** /////////////////////////////////////////// */
+/** Grid Container */
+.container {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #eee7e7;
+  width: 90%;
+  margin: 50px auto;
+
+  display: grid;
+
+  /** implicit and explicit grid in CSS Grid */
+  /*? implicit grid */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 120px);
+  grid-gap: 15px;
+
+  /*? explicit grid */
+  grid-auto-flow: column;
+  /* by default the grid flow is row */
+
+  grid-auto-rows: 80px;
+  /* this will set the height of the grids which are not set in implicit grid */
+
+  grid-auto-columns: 2fr;
+  /* this will set the width of the grids which are not set in implicit grid */
+}
+
+/** /////////////////////////////////////////// */
+/** Grid Items */
+
+.item1 {
+  background-color: orangered;
+}
+
+.item2 {
+  background-color: yellowgreen;
+}
+
+.item3 {
+  background-color: slateblue;
+}
+
+.item4 {
+  background-color: hotpink;
+}
+
+.item5 {
+  background-color: royalblue;
+}
+
+.item6 {
+  background-color: rgb(244, 11, 232);
+}
+
+.item7 {
+  background-color: goldenrod;
+}
+
+.item8 {
+  background-color: rgba(9, 177, 132, 0.759);
+}

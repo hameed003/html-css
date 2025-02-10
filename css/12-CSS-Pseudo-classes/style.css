@@ -1,0 +1,71 @@
+/** CSS Pseudo Classes Study Link: https://www.w3schools.com/css/css_pseudo_classes.asp ( w3schools ) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 20px;
+}
+ul {
+  margin: 10px 0 20px 40px;
+}
+
+ol {
+  margin: 10px 0 10px 40px;
+}
+
+p {
+  margin: 10px 0 20px 0;
+  font-size: 18px;
+}
+
+h1 {
+  color: rgb(13, 241, 127);
+}
+
+h4 {
+  margin-top: 50px;
+  color: rgb(245, 30, 234);
+}
+
+h5 {
+  font-size: 30px;
+  color: rgb(250, 11, 11);
+  font-weight: 600;
+}
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: rgb(240, 18, 18);
+}
+
+/* Styling a link depending on state */
+
+/* unvisited link */
+.anchor-container a:link {
+  text-decoration: none;
+  color: rgb(83, 16, 241);
+  border: 1px solid rgb(7, 39, 7);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* visited link */
+.anchor-container a:visited {
+  color: rgb(247, 16, 16);
+}
+
+/* mouse over link */
+.anchor-container a:hover {
+  color: rgb(10, 121, 19);
+}
+
+/* selected link */
+.anchor-container a:active {
+  color: rgb(248, 26, 174);
+}

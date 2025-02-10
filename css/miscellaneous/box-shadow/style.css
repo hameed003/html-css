@@ -1,0 +1,139 @@
+/** Reference: https://htmlcssfreebies.com/css-box-shadow-examples/ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-family: sans-serif;
+  padding: 10px;
+}
+h1 {
+  margin: 15px 0 0 0;
+  padding-left: 110px;
+  color: rgb(88, 83, 83);
+}
+p {
+  color: rgb(88, 83, 83);
+}
+.container {
+  background-color: #fff;
+  width: 98%;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 25px; */
+  padding: 0 40px 0 82px;
+  border-radius: 10px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 60px;
+  background-color: rgba(255, 255, 255, 1);
+  color: #000;
+  margin: 30px;
+  font-size: 20px;
+  width: 280px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+/** Order of box shadow property */
+/* box-shadow: offset-x offset-y blur-radius(Optional) spread-radius(Optional) color(Optional, will inherit parent color if not given) inset(Optional); */
+
+.soft-border {
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05),
+    0px 0px 0px 1px rgba(209, 213, 219, 1) inset;
+}
+
+.border-1 {
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05),
+    0px 0px 0px 1px rgba(209, 213, 219, 1);
+}
+.border-2 {
+  box-shadow: 0px 1px 1px 0px rgba(9, 30, 66, 0.25),
+    0px 0px 1px 1px rgba(9, 30, 66, 0.13);
+}
+
+.amazing {
+  box-shadow: 0px 9px 20px 0px rgba(13, 38, 76, 0.19);
+}
+
+.ui-simple {
+  box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.05);
+}
+
+.inset-all-sides {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45) inset;
+}
+.material-design {
+  box-shadow: 0px 19px 38px 0px rgba(0, 0, 0, 0.3),
+    0px 15px 12px 0px rgba(0, 0, 0, 0.22);
+}
+.fluent-ui-raised {
+  box-shadow: 0px 26px 58px 0px rgba(0, 0, 0, 0.22),
+    0px 5px 14px 0px rgba(0, 0, 0, 0.18);
+}
+.fluent-ui-creative {
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.13),
+    0px 1px 4px 0px rgba(0, 0, 0, 0.11);
+}
+.inset-modern {
+  box-shadow: 0px 0px 35px 5px rgba(0, 0, 0, 0.25) inset,
+    0px 2px 1px 1px rgba(255, 255, 255, 0.9) inset,
+    0px -2px 1px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.ui-perfect {
+  box-shadow: 0px 25px 80px 0px rgba(0, 0, 0, 0.15);
+}
+.ui-soft {
+  box-shadow: 0px 7px 30px -10px rgba(150, 170, 180, 0.5);
+}
+
+.modern-box-shadow {
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.07),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.07), 0px 4px 8px 0px rgba(0, 0, 0, 0.07),
+    0px 8px 16px 0px rgba(0, 0, 0, 0.07), 0px 16px 32px 0px rgba(0, 0, 0, 0.07),
+    0px 32px 64px 0px rgba(0, 0, 0, 0.07);
+}
+
+.bootstrap-large {
+  box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+}
+
+.bootstrap-regular {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+}
+.inset-elevated {
+  box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25),
+    0px 30px 60px -30px rgba(0, 0, 0, 0.3),
+    0px -2px 6px 0px rgba(10, 37, 64, 0.35) inset;
+}
+.primer-extra-large {
+  box-shadow: 0px 12px 28px 0px rgba(140, 149, 159, 0.3);
+}
+
+.sleek {
+  box-shadow: 0px 12px 28px 0px rgba(0, 0, 0, 0.2),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.1),
+    0px 0px 0px 1px rgba(255, 255, 255, 0.05) inset;
+}
+
+.layred-effect {
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.07),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.07), 0px 4px 8px 0px rgba(0, 0, 0, 0.07),
+    0px 8px 16px 0px rgba(0, 0, 0, 0.07), 0px 16px 32px 0px rgba(0, 0, 0, 0.07),
+    0px 32px 64px 0px rgba(0, 0, 0, 0.07);
+}
+
+.ui-elevated {
+  box-shadow: 0px 20px 50px -10px rgba(0, 0, 0, 0.2);
+}
+
+.ui-sharp {
+  box-shadow: 0px 25px 80px 0px rgba(0, 0, 0, 0.5);
+}
