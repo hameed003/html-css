@@ -1,3 +1,7 @@
+# What does **Smaller Dimension (`vmin`)** and **Larger Dimension (`vmax`)** actually means?
+
+---
+
 Sure! Let’s break it down in simple terms:
 
 ---
