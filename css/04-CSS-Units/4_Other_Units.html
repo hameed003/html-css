@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid, Rotations, and Animations Examples</title>
+    <style>
+        /* Using fr (fractional unit) in CSS Grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            /* Second column is twice as wide as the first */
+            gap: 10px;
+            /* Space between grid items */
+            background-color: lightblue;
+            padding: 10px;
+            border: 2px solid darkblue;
+        }
+
+        .grid-item {
+            background-color: lightcoral;
+            border: 2px solid darkred;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Using deg (degrees) for rotations */
+        .rotate-box {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            border: 2px solid darkgreen;
+            text-align: center;
+            line-height: 100px;
+            /* Vertically center text */
+            margin: 20px auto;
+            /* Center the box horizontally */
+            transform: rotate(45deg);
+            /* Rotates the element by 45 degrees */
+        }
+
+        /* Using s (seconds) and ms (milliseconds) for animations */
+        .fade-in {
+            width: 200px;
+            height: 100px;
+            background-color: lightyellow;
+            border: 2px solid darkgoldenrod;
+            text-align: center;
+            line-height: 100px;
+            /* Vertically center text */
+            margin: 20px auto;
+            /* Center the box horizontally */
+            animation: fade 2s ease-in-out;
+            /* Animation lasts 2 seconds */
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Example 1: Using fr (fractional unit) in CSS Grid -->
+    <div class="grid-container">
+        <div class="grid-item">1fr</div>
+        <div class="grid-item">2fr</div>
+    </div>
+
+    <!-- Example 2: Using deg (degrees) for rotations -->
+    <div class="rotate-box">
+        Rotated
+    </div>
+
+    <!-- Example 3: Using s (seconds) and ms (milliseconds) for animations -->
+    <div class="fade-in">
+        Fade In
+    </div>
+</body>
+
+</html>

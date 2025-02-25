@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Viewport-Relative Units Examples</title>
+    <style>
+        /* Using vw (viewport width) */
+        .full-width {
+            width: 100vw;
+            /* 100% of the viewport width */
+            background-color: lightblue;
+            border: 2px solid darkblue;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Using vh (viewport height) */
+        .full-height {
+            height: 100vh;
+            /* 100% of the viewport height */
+            background-color: lightcoral;
+            border: 2px solid darkred;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Using vmin (viewport minimum) */
+        .responsive-square {
+            width: 50vmin;
+            /* 50% of the smaller viewport dimension */
+            height: 50vmin;
+            /* Creates a square that scales with the viewport */
+            background-color: lightgreen;
+            border: 2px solid darkgreen;
+            text-align: center;
+            line-height: 50vmin;
+            /* Vertically center text */
+            margin: 20px auto;
+            /* Center the square horizontally */
+        }
+
+        /* Using vmax (viewport maximum) */
+        .large-text {
+            font-size: 10vmax;
+            /* 10% of the larger viewport dimension */
+            background-color: lightyellow;
+            border: 2px solid darkgoldenrod;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Example 1: Using vw (viewport width) -->
+    <div class="full-width">
+        This element has a width of 100vw (100% of the viewport width).
+    </div>
+
+    <!-- Example 2: Using vh (viewport height) -->
+    <div class="full-height">
+        This element has a height of 100vh (100% of the viewport height).
+    </div>
+
+    <!-- Example 3: Using vmin (viewport minimum) -->
+    <div class="responsive-square">
+        This is a responsive square (50vmin × 50vmin).
+    </div>
+
+    <!-- Example 4: Using vmax (viewport maximum) -->
+    <div class="large-text">
+        This text has a font size of 10vmax (10% of the larger viewport dimension).
+    </div>
+</body>
+
+</html>
