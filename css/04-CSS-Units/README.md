@@ -145,11 +145,11 @@ Viewport-relative units are based on the size of the browser's viewport (the vis
 - **`vmin` (Viewport Minimum)**:
 
   - Relative to the smaller dimension of the viewport (width or height).
-  - Example: `font-size: 5vmin;` sets the font size to 5% of the [viewport's smaller dimension]().
+  - Example: `font-size: 5vmin;` sets the font size to 5% of the [viewport's smaller dimension](https://github.com/hameed003/html-css/blob/main/css/04-CSS-Units/vmin-and-vmax.md).
 
 - **`vmax` (Viewport Maximum)**:
   - Relative to the larger dimension of the viewport (width or height).
-  - Example: `font-size: 5vmax;` sets the font size to 5% of the [viewport's larger dimension]().
+  - Example: `font-size: 5vmax;` sets the font size to 5% of the [viewport's larger dimension](https://github.com/hameed003/html-css/blob/main/css/04-CSS-Units/vmin-and-vmax.md).
 
 #### Examples:
 
